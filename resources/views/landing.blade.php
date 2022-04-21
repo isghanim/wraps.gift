@@ -8,14 +8,14 @@
     <title>Laravel</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
@@ -26,18 +26,10 @@
     <header class="relative">
         <div class="bg-gray-900 pt-6">
             <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-                <div>
-                    <a href="#">
-                        <span class="sr-only">Home</span>
-                        <img class="h-8 w-auto sm:h-10"
-                             src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#"
-                       class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-sm text-white bg-gray-600 hover:bg-gray-700">
-                        Log in</a>
-                </div>
+                <x-icons.gift-outline class="block text-indigo-500 h-8 w-auto"></x-icons.gift-outline>
+                <a href="#"
+                   class="block inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900">
+                    Log in</a>
             </nav>
         </div>
     </header>
@@ -54,7 +46,8 @@
                                 <span class="text-indigo-400">digital gifts</span>
                             </h1>
                             <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                Shorten your links and customize the preview so opening your digital gifts feels truly
+                                Create a shortened link and customize the preview so opening your digital gift feels
+                                truly
                                 special.
                             </p>
                             <div class="mt-10 sm:mt-12">
@@ -72,7 +65,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <p class="mt-3 text-sm text-gray-300 sm:mt-4">No password needed. You'll receive an
+                                    <p class="mt-3 text-sm text-gray-400 sm:mt-4">No password needed. You'll receive an
                                         email with a
                                         magic link to get started.
                                     </p>
@@ -82,10 +75,9 @@
                     </div>
                     <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
                         <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                            <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-                            <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                                 src="https://tailwindui.com/img/component-images/cloud-illustration-indigo-400.svg"
-                                 alt="">
+                            <x-illos.hero
+                                class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
+                            </x-illos.hero>
                         </div>
                     </div>
                 </div>
