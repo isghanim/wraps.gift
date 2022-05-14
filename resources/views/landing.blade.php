@@ -26,7 +26,7 @@
         <div class="bg-gray-900 pt-6">
             <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
                 <x-icons.gift-outline class="block text-indigo-500 h-8 w-auto"></x-icons.gift-outline>
-                <a href="#"
+                <a href="{{ route('login') }}"
                    class="block items-center px-4 py-2 border border-transparent text-base font-medium rounded-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900">
                     Log in</a>
             </nav>
