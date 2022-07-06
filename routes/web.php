@@ -32,7 +32,9 @@ Route::get('/', function () {
     return view('landing');
 })->name('landing');
 
-Route::get('/big-shawn', [RedirectController::class, 'redirect']);
+Route::get('/big-shawn', [RedirectController::class, 'bigShawnRedirect']);
+
+Route::get('/rosey-kismet', [RedirectController::class, 'roseyKismetRedirect']);
 
 // TODO: add dynamic route for redirects (either for custom slugs or a generated code)
 // NOTE: there are potential phishing attacks that can happen with custom slugs (e.g. wraps.gift/login or /log-in

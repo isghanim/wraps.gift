@@ -8,12 +8,10 @@
           content="{{ $description }}">
     {{-- OpenGraph properties --}}
     <meta name="og:site_name" content="Digital gift wrap">
-    <meta name="og:title" content="{{ $title }}"/>
-    <meta name="og:description"
-          content="{{ $description  }}"/>
-    <meta name="og:image:secure_url" itemprop="image"
-          content="{{ $imageUrl  }}">
-    <meta name="og:type" content="website"/>
+    <meta name="og:title" content="{{ $title }}">
+    <meta name="og:description" content="{{ $description  }}">
+    <meta name="og:type" content="website">
+    <meta name="og:image:secure_url" itemprop="image" content="{{ $imageUrl  }}">
     {{-- TODO: add Twitter properties and more OpenGraph properties --}}
 
     <meta http-equiv="refresh" content="0; URL={{ $url }}">
